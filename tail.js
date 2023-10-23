@@ -1,11 +1,3 @@
-const head = function(arr) {
-  return arr[0];
-};
-
-const tail = function(arr) {
-  return arr.slice(1);
-};
-
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`🙂🙂🙂 Assertion Passed: ${actual} === ${expected}`);
@@ -14,9 +6,18 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+const tail = function(input) {
+  if (input.length >= 1) {
+    const arrTail = input.slice(1);
+    return arrTail;
+  } else {
+    return [];
+  }
+};
+
 // TEST CASES
-assertEqual(head([5,6,7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-assertEqual(head([1, 2, 3]), 1);
-assertEqual(head(["a", "b", "c"]), "a");
-assertEqual(head([]), undefined);
+assertEqual(tail([5,6,7]).toString(), [6, 7].toString());
+assertEqual(tail(["Hello", "Lighthouse", "Labs"]).toString(), ["Lighthouse", "Labs"].toString());
+assertEqual(tail([1, 2, 3]).toString(), [2, 3].toString());
+assertEqual(tail(["a", "b", "c"]).toString(), ["b", "c"].toString());
+assertEqual(tail([]).toString(), [].toString());
