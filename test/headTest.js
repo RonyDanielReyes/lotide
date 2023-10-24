@@ -17,6 +17,6 @@ describe("#head", () => {
     assert.strictEqual(head(['5']), '5'); 
   });
   it ("returns '3' for ['3']", () => {
-    assert.strictEqual(head(['3']), 3);
+    assert.strictEqual(head(['3']), '3');
   });
 });
