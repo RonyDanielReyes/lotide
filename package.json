@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "ronyreyes51",
   "version": "1.0.0",
-  "description": "",
+  "description": "I'ts an assigment from school",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/RonyDanielReyes/lotide.git"
   },
-  "author": "",
+  "author": "Rony Reyes: first project created",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/RonyDanielReyes/lotide/issues"
